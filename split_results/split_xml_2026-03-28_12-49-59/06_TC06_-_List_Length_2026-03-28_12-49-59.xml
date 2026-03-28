@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t6" name="TC06 - List Length" line="82">
+<kw name="Count Items In List">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.446527" level="INFO">${items} = ['alpha', 'beta', 'gamma', 'delta']</msg>
+<var>${items}</var>
+<arg>alpha</arg>
+<arg>beta</arg>
+<arg>gamma</arg>
+<arg>delta</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446373" elapsed="0.000170" />
+</kw>
+<kw name="Length Should Be" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.446764" level="INFO">Length is 4.</msg>
+<arg>${items}</arg>
+<arg>4</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446597" elapsed="0.000194" />
+</kw>
+<doc>Creates a list and checks its length.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446268" elapsed="0.000556" />
+</kw>
+<doc>Counts items in a four-element list.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446086" elapsed="0.000800" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

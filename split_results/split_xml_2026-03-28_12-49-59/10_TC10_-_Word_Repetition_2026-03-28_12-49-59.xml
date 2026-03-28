@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t10" name="TC10 - Word Repetition" line="98">
+<kw name="Repeat A Word">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.452349" level="INFO">${word} = test</msg>
+<var>${word}</var>
+<arg>test</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452189" elapsed="0.000177" />
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.452637" level="INFO">${repeated} = test test test </msg>
+<var>${repeated}</var>
+<arg>"${word} " * 3</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452429" elapsed="0.000225" />
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${repeated}</arg>
+<arg>test</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452711" elapsed="0.000193" />
+</kw>
+<doc>Repeats a word three times and checks the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452049" elapsed="0.000894" />
+</kw>
+<doc>Repeats the word 'test' and checks the output.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.451789" elapsed="0.001228" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

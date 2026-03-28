@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t9" name="TC09 - Even Number Validation" line="94">
+<kw name="Validate Even Number">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.450569" level="INFO">${number} = 8</msg>
+<var>${number}</var>
+<arg>${8}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449898" elapsed="0.000732" />
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.451158" level="INFO">${remainder} = 0</msg>
+<var>${remainder}</var>
+<arg>${number} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.450806" elapsed="0.000378" />
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.451460" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${remainder}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.451264" elapsed="0.000246" />
+</kw>
+<doc>Checks that a number is even using modulo.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449657" elapsed="0.001902" />
+</kw>
+<doc>Confirms 8 is an even number.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449469" elapsed="0.002188" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

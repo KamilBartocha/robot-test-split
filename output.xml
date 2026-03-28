@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t1" name="TC01 - Greeting" line="62">
+<kw name="Greet User">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.441381" level="INFO">Hello, Robot Framework!</msg>
+<arg>Hello, Robot Framework!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.441182" elapsed="0.000248"/>
+</kw>
+<doc>Prints a greeting message.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.440833" elapsed="0.000662"/>
+</kw>
+<doc>Logs a greeting message.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.440373" elapsed="0.001222"/>
+</test>
+<test id="s1-t2" name="TC02 - Sum Calculation" line="66">
+<kw name="Calculate Sum">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.442333" level="INFO">${result} = 10</msg>
+<var>${result}</var>
+<arg>3 + 7</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.442097" elapsed="0.000256"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.442580" level="INFO">Sum is 10</msg>
+<arg>Sum is ${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.442417" elapsed="0.000191"/>
+</kw>
+<doc>Adds two numbers and logs the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.441954" elapsed="0.000691"/>
+</kw>
+<doc>Verifies that 3 + 7 equals 10.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.441723" elapsed="0.000998"/>
+</test>
+<test id="s1-t3" name="TC03 - Positive Number Check" line="70">
+<kw name="Check Positive Number">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.443487" level="INFO">${number} = 42</msg>
+<var>${number}</var>
+<arg>${42}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.443158" elapsed="0.000345"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${number} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.443559" elapsed="0.000183"/>
+</kw>
+<doc>Verifies that a number is greater than zero.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.443035" elapsed="0.000742"/>
+</kw>
+<doc>Confirms 42 is greater than zero.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.442832" elapsed="0.001015"/>
+</test>
+<test id="s1-t4" name="TC04 - Non-Empty String" line="74">
+<kw name="Verify String Is Not Empty">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.444387" level="INFO">${text} = Robot</msg>
+<var>${text}</var>
+<arg>Robot</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444246" elapsed="0.000158"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.444663" level="INFO">Length is 5.</msg>
+<arg>${text}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444454" elapsed="0.000236"/>
+</kw>
+<doc>Checks that a given string has content.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444133" elapsed="0.000589"/>
+</kw>
+<doc>Ensures the string 'Robot' is not empty.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.443942" elapsed="0.000844"/>
+</test>
+<test id="s1-t5" name="TC05 - Uppercase Conversion" line="78">
+<kw name="Convert To Uppercase">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.445384" level="INFO">${original} = hello</msg>
+<var>${original}</var>
+<arg>hello</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445239" elapsed="0.000163"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.445653" level="INFO">${upper} = HELLO</msg>
+<var>${upper}</var>
+<arg>"${original}".upper()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445459" elapsed="0.000209"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${upper}</arg>
+<arg>HELLO</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445722" elapsed="0.000170"/>
+</kw>
+<doc>Converts a string to uppercase and validates it.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445119" elapsed="0.000808"/>
+</kw>
+<doc>Converts 'hello' to 'HELLO' and verifies.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444880" elapsed="0.001114"/>
+</test>
+<test id="s1-t6" name="TC06 - List Length" line="82">
+<kw name="Count Items In List">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.446527" level="INFO">${items} = ['alpha', 'beta', 'gamma', 'delta']</msg>
+<var>${items}</var>
+<arg>alpha</arg>
+<arg>beta</arg>
+<arg>gamma</arg>
+<arg>delta</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446373" elapsed="0.000170"/>
+</kw>
+<kw name="Length Should Be" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.446764" level="INFO">Length is 4.</msg>
+<arg>${items}</arg>
+<arg>4</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446597" elapsed="0.000194"/>
+</kw>
+<doc>Creates a list and checks its length.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446268" elapsed="0.000556"/>
+</kw>
+<doc>Counts items in a four-element list.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.446086" elapsed="0.000800"/>
+</test>
+<test id="s1-t7" name="TC07 - Boolean Flag" line="86">
+<kw name="Check Boolean Flag">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.447423" level="INFO">${flag} = False</msg>
+<var>${flag}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.447268" elapsed="0.000171"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.447681" level="FAIL">'False' should be true.</msg>
+<arg>${flag}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.447491" elapsed="0.000278">'False' should be true.</status>
+</kw>
+<doc>Sets a boolean variable and asserts it is true.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.447156" elapsed="0.000699">'False' should be true.</status>
+</kw>
+<doc>Asserts that a TRUE flag is truthy.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.446978" elapsed="0.000976">'False' should be true.</status>
+</test>
+<test id="s1-t8" name="TC08 - Full Name Concatenation" line="90">
+<kw name="Build Full Name">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448519" level="INFO">${first} = John</msg>
+<var>${first}</var>
+<arg>John</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448381" elapsed="0.000154"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448720" level="INFO">${last} = Doe</msg>
+<var>${last}</var>
+<arg>Doe</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448587" elapsed="0.000148"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448957" level="INFO">${full} = John Doe</msg>
+<var>${full}</var>
+<arg>${first} ${last}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448785" elapsed="0.000187"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${full}</arg>
+<arg>John Doe</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449029" elapsed="0.000228"/>
+</kw>
+<doc>Concatenates first and last name.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448261" elapsed="0.001047"/>
+</kw>
+<doc>Joins first and last name into 'John Doe'.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448057" elapsed="0.001319"/>
+</test>
+<test id="s1-t9" name="TC09 - Even Number Validation" line="94">
+<kw name="Validate Even Number">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.450569" level="INFO">${number} = 8</msg>
+<var>${number}</var>
+<arg>${8}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449898" elapsed="0.000732"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.451158" level="INFO">${remainder} = 0</msg>
+<var>${remainder}</var>
+<arg>${number} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.450806" elapsed="0.000378"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.451460" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${remainder}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.451264" elapsed="0.000246"/>
+</kw>
+<doc>Checks that a number is even using modulo.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449657" elapsed="0.001902"/>
+</kw>
+<doc>Confirms 8 is an even number.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449469" elapsed="0.002188"/>
+</test>
+<test id="s1-t10" name="TC10 - Word Repetition" line="98">
+<kw name="Repeat A Word">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.452349" level="INFO">${word} = test</msg>
+<var>${word}</var>
+<arg>test</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452189" elapsed="0.000177"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.452637" level="INFO">${repeated} = test test test </msg>
+<var>${repeated}</var>
+<arg>"${word} " * 3</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452429" elapsed="0.000225"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${repeated}</arg>
+<arg>test</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452711" elapsed="0.000193"/>
+</kw>
+<doc>Repeats a word three times and checks the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.452049" elapsed="0.000894"/>
+</kw>
+<doc>Repeats the word 'test' and checks the output.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.451789" elapsed="0.001228"/>
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="9" fail="1" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

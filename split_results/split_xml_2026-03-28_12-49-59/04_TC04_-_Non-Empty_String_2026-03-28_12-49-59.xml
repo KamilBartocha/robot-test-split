@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t4" name="TC04 - Non-Empty String" line="74">
+<kw name="Verify String Is Not Empty">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.444387" level="INFO">${text} = Robot</msg>
+<var>${text}</var>
+<arg>Robot</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444246" elapsed="0.000158" />
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.444663" level="INFO">Length is 5.</msg>
+<arg>${text}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444454" elapsed="0.000236" />
+</kw>
+<doc>Checks that a given string has content.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444133" elapsed="0.000589" />
+</kw>
+<doc>Ensures the string 'Robot' is not empty.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.443942" elapsed="0.000844" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t2" name="TC02 - Sum Calculation" line="66">
+<kw name="Calculate Sum">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.442333" level="INFO">${result} = 10</msg>
+<var>${result}</var>
+<arg>3 + 7</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.442097" elapsed="0.000256" />
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.442580" level="INFO">Sum is 10</msg>
+<arg>Sum is ${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.442417" elapsed="0.000191" />
+</kw>
+<doc>Adds two numbers and logs the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.441954" elapsed="0.000691" />
+</kw>
+<doc>Verifies that 3 + 7 equals 10.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.441723" elapsed="0.000998" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

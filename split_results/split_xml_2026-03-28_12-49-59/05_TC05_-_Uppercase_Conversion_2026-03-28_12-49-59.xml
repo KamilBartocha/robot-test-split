@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t5" name="TC05 - Uppercase Conversion" line="78">
+<kw name="Convert To Uppercase">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.445384" level="INFO">${original} = hello</msg>
+<var>${original}</var>
+<arg>hello</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445239" elapsed="0.000163" />
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.445653" level="INFO">${upper} = HELLO</msg>
+<var>${upper}</var>
+<arg>"${original}".upper()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445459" elapsed="0.000209" />
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${upper}</arg>
+<arg>HELLO</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445722" elapsed="0.000170" />
+</kw>
+<doc>Converts a string to uppercase and validates it.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.445119" elapsed="0.000808" />
+</kw>
+<doc>Converts 'hello' to 'HELLO' and verifies.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.444880" elapsed="0.001114" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

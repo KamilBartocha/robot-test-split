@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on darwin)" generated="2026-03-28T12:49:43.415813" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Example" source="/Users/kamil/Repositories/robot-test-split/tests_example.robot">
+<test id="s1-t8" name="TC08 - Full Name Concatenation" line="90">
+<kw name="Build Full Name">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448519" level="INFO">${first} = John</msg>
+<var>${first}</var>
+<arg>John</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448381" elapsed="0.000154" />
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448720" level="INFO">${last} = Doe</msg>
+<var>${last}</var>
+<arg>Doe</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448587" elapsed="0.000148" />
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-28T12:49:43.448957" level="INFO">${full} = John Doe</msg>
+<var>${full}</var>
+<arg>${first} ${last}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448785" elapsed="0.000187" />
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${full}</arg>
+<arg>John Doe</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.449029" elapsed="0.000228" />
+</kw>
+<doc>Concatenates first and last name.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448261" elapsed="0.001047" />
+</kw>
+<doc>Joins first and last name into 'John Doe'.</doc>
+<status status="PASS" start="2026-03-28T12:49:43.448057" elapsed="0.001319" />
+</test>
+<doc>Dummy test suite with 10 test cases, each using a unique user-defined keyword.</doc>
+<status status="FAIL" start="2026-03-28T12:49:43.416708" elapsed="0.036586" />
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Example" id="s1" pass="1" fail="0" skip="0">Tests Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

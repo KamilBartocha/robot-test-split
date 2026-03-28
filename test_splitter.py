@@ -184,7 +184,7 @@ def split_output(input_file: Path, output_dir: Path, generate_html: bool = False
 
     log(f"Found [bold]{total}[/bold] test(s).", "green")
 
-    xml_dir = output_dir / "split_xml"
+    xml_dir = output_dir / f"split_xml_{run_dt}"
     xml_dir.mkdir(parents=True, exist_ok=True)
 
     # ── Split XML ────────────────────────────────────────────────────────────
@@ -269,7 +269,7 @@ def split_output(input_file: Path, output_dir: Path, generate_html: bool = False
         return
 
     # ── Generate HTML logs ───────────────────────────────────────────────────
-    html_dir = output_dir / "split_html"
+    html_dir = output_dir / f"split_html_{run_dt}"
     html_dir.mkdir(parents=True, exist_ok=True)
     rebot_cmd = find_rebot()
     if rebot_cmd is None:
