@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "robot-test-split"
+version = "0.1.0"
+description = "Split a Robot Framework output.xml into one XML (and optionally HTML) file per test case."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+rich = ["rich>=13"]
+
+[project.scripts]
+robot-test-split = "robot_test_split.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robot_test_split"]
